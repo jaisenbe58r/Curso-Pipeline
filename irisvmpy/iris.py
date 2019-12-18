@@ -46,4 +46,4 @@ def cli(dimensions):
 
 
 if __name__ == "__main__":
-    cli(dimm_names)
+    cli()
