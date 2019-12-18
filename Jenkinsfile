@@ -97,7 +97,6 @@ pipeline {
                     cucumber (buildStatus: 'SUCCESS',
                     fileIncludePattern: '**/*.json',
                     jsonReportDirectory: './reports/',
-                    parallelTesting: false,
                     sortingMethod: 'ALPHABETICAL')
                 }
             }
