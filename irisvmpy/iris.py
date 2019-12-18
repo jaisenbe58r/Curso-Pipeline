@@ -13,9 +13,9 @@ import click
 # import some data to play with
 iris = datasets.load_iris()
 
-X = iris.data[:, :2]  # we only take the first two features. We could
+X = iris['data'][:, :2]  # we only take the first two features. We could
 # avoid this ugly slicing by using a two-dim dataset
-y = iris.target
+y = iris['target']
 
 
 svc = svm.SVC(kernel='rbf', C=1, gamma=0.7).fit(X, y)
@@ -46,4 +46,4 @@ def cli(dimensions):
 
 
 if __name__ == "__main__":
-    cli()
+    cli(dimm_names)
