@@ -32,6 +32,7 @@ def cli(dimensions):
     dimensions {list} -- list of flower dimensions: PL, PW, SL, SW
     """
     click.echo("Iris Flower classifier\n")
+    5
 
     click.echo("Calculating result...")
     time.sleep(1)
