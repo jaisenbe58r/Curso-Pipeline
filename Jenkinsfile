@@ -53,7 +53,7 @@ pipeline {
                         pylint irisvmpy || true
                     '''
             }
-            post{
+            /* post{
                 always{
                     step([$class: 'CoberturaPublisher',
                                    autoUpdateHealth: false,
@@ -67,7 +67,7 @@ pipeline {
                                    sourceEncoding: 'ASCII',
                                    zoomCoverageChart: false])
                 }
-            }
+            } */
         }
 
 
